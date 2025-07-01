@@ -1,0 +1,15 @@
+@layer base, utils, components;
+
+@import "@webtui/css/base.css";
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+nav *::before,
+nav *::after,
+nav ul *::before,
+nav ul *::after {
+  border: none !important;
+  background: none !important;
+  content: none !important;
+}

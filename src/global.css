@@ -1,0 +1,39 @@
+@layer base, utils, components;
+
+@import "@webtui/css/base.css";
+
+/* Utils */
+@import "@webtui/css/utils/box.css";
+
+/* Components */
+@import "@webtui/css/components/button.css";
+@import "@webtui/css/components/typography.css";
+
+/*Themes*/
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+nav *::before,
+nav *::after,
+nav ul *::before,
+nav ul *::after {
+  border: none !important;
+  background: none !important;
+  content: none !important;
+}
+
+ul *::before {
+  content: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 56px; /* Example: mobile navbar height */
+}
+
+@media (min-width: 640px) {
+  /* Tailwind's sm breakpoint */
+  html {
+    scroll-padding-top: 80px; /* Example: desktop navbar height */
+  }
+}
