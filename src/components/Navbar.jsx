@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 const Navbar = ({ toggleTheme }) => {
   const links = [
     { href: "#about", label: "About" },
@@ -27,6 +27,14 @@ const Navbar = ({ toggleTheme }) => {
               </li>
             );
           })}
+          <li>
+            <Link
+              to="/blog"
+              className="text-lg font-semibold text-base-content hover:text-primary transition-colors duration-500 ease-in-out"
+            >
+              Blog
+            </Link>
+          </li>
           <li>
             <a
               href="/Ryan_Lov_Resume.pdf"
@@ -125,6 +133,24 @@ const Navbar = ({ toggleTheme }) => {
                 </a>
               </li>
             ))}
+            <li className="pb-5 text-2xl font-semibold">
+              <Link
+                to="/blog"
+                className="text-lg font-semibold text-base-content hover:text-primary transition-colors duration-500 ease-in-out"
+              >
+                Blog
+              </Link>
+            </li>
+            <li className="pb-5 text-2xl font-semibold">
+              <a
+                href="/Ryan_Lov_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pb-5 text-lg font-semibold text-base-content hover:text-primary transition-colors duration-500 ease-in-out"
+              >
+                Resume
+              </a>
+            </li>
             <label class="swap swap-rotate">
               <input
                 type="checkbox"

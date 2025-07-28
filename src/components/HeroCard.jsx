@@ -34,7 +34,7 @@ const HeroCard = () => {
           >
             <FaLinkedin size={"3em"} />
           </a>
-          <a href="https://github.com/ryanlov" className=" hover:scale-110">
+          <a href="https://github.com/rllov" className=" hover:scale-110">
             <FaGithub size={"3em"} />
           </a>
           <a

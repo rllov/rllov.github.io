@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Education from "./Education";
-import Contact from "./Contact";
-import About from "./About";
-import HeroCard from "./HeroCard";
+import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Education from "../components/Education";
+import Contact from "../components/Contact";
+import About from "../components/About";
+import HeroCard from "../components/HeroCard";
+// import SkillTree from "../components/SkillTree";
 
 import "../global.css";
 
@@ -50,6 +51,7 @@ const Home = () => {
       {!showLanding && (
         <>
           <Navbar theme={theme} toggleTheme={toggleTheme} />
+
           <main className="min-h-screen w-full flex flex-col md:flex-row items-stretch justify-evenly bg-base-100">
             <div className="w-full md:w-1/3 md:sticky md:top-0 md:h-screen flex items-center justify-center p-4 bg-base-200 ">
               <HeroCard />
@@ -63,6 +65,7 @@ const Home = () => {
               <Projects />
               <div class="divider divider-secondary"></div>
               <Skills />
+              {/* <SkillTree /> */}
               <div class="divider divider-accent"></div>
               <Contact />
             </div>
@@ -72,6 +75,7 @@ const Home = () => {
               © {new Date().getFullYear()} Ryan Lov. All rights reserved.
             </p>
             <p className="text-xs">Built using React + TailwindCSS + DaisyUI</p>
+            <p>Updated {new Date().toLocaleDateString()}</p>
           </footer>
         </>
       )}
