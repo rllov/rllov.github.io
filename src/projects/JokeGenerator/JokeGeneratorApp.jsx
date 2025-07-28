@@ -21,7 +21,7 @@ const JokeGeneratorApp = () => {
       {/* BackButton */}
       <BackToProjectsButton />
       {/* Joke Generator Section */}
-      <div className="container mx-auto p-4 flex flex-col items-center mt-4">
+      <div className="container mx-auto h-screen p-4 flex flex-col justify-center items-center">
         <h1>Joke Generator</h1>
         <button onClick={fetchJoke}>Get a Joke</button>
         <p>{joke}</p>
