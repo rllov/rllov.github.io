@@ -37,7 +37,7 @@ const Navbar = ({ toggleTheme }) => {
           </li>
           <li>
             <a
-              href="/Ryan_Lov_Resume.pdf"
+              href="/Ryan_Lov_Resume_Web_Dev.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg font-semibold text-base-content hover:text-primary transition-colors duration-500 ease-in-out"
@@ -143,7 +143,7 @@ const Navbar = ({ toggleTheme }) => {
             </li>
             <li className="pb-5 text-2xl font-semibold">
               <a
-                href="/Ryan_Lov_Resume.pdf"
+                href="/Ryan_Lov_Resume_Web_Dev.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pb-5 text-lg font-semibold text-base-content hover:text-primary transition-colors duration-500 ease-in-out"
