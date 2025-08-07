@@ -1,13 +1,16 @@
 import heroImage from "../assets/profileHeadShot.png"; // Adjust the path as necessary
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import Contact from "./Contact";
 const HeroCard = () => {
   return (
     <div className="hero h-full flex flex-col items-center justify-center text-center border-2 rounded-lg shadow-lg p-8 ">
-      <h1 className="text-4xl font-bold">Welcome to My Portfolio!</h1>
-      <p className="mt-2 text-lg text-base-content">
-        Just a CS graduate who is a passionate developer with experience in
-        building web applications.
-      </p>
+      <div className="text-4xl text-base-content">
+        <h1 className="text-3xl font-bold">Welcome to My Portfolio!</h1>
+        <p className="mt-2 text-lg text-base-content">
+          Just a CS graduate who is a passionate developer with experience in
+          building web applications.
+        </p>
+      </div>
       <div className="mt-4 flex flex-wrap justify-center gap-4">
         <button className="btn btn-primary" aria-label="View Projects">
           <a href="#projects">View Projects</a>
@@ -20,7 +23,7 @@ const HeroCard = () => {
         <img
           src={heroImage}
           alt="Hero"
-          className="rounded-lg shadow-lg w-full max-w-xs h-auto object-cover"
+          className="rounded-lg shadow-lg w-full max-w-xs h-full object-cover"
         />
       </div>
       <div className="mt-2">

@@ -9,6 +9,8 @@ import About from "../components/About";
 import HeroCard from "../components/HeroCard";
 // import SkillTree from "../components/SkillTree";
 
+import AllProjectsHomePage from "../projects/allProjectsHomePage";
+
 import "../global.css";
 
 function LandingScreen({ onFinish, theme }) {
@@ -61,13 +63,15 @@ const Home = () => {
               <About />
               <div class="divider divider-neutral"></div>
               <Education />
-              <div class="divider divider-primary"></div>
-              <Projects />
               <div class="divider divider-secondary"></div>
               <Skills />
-              {/* <SkillTree /> */}
               <div class="divider divider-accent"></div>
               <Contact />
+              <div class="divider divider-primary"></div>
+              <AllProjectsHomePage />
+
+              {/* <SkillTree /> */}
+              <div class="divider divider-accent"></div>
             </div>
           </main>
           <footer className="w-full text-center p-4 bg-base-300">

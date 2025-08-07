@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const Projects = [
+import Projects from "../components/Projects";
+const ProjectsInfo = [
   {
     id: "submission-form",
     Name: "Submission Form",
@@ -47,29 +47,34 @@ const Projects = [
     Tags: "React, JavaScript, CSS, Algorithms",
     Date: "08/05/2025",
   },
+  {
+    id: "osrs-skilling",
+    Name: "OSRS Skilling",
+    Description: "A web application minigame for OSRS skilling progress.",
+    Tags: "React, JavaScript, CSS, Gaming",
+    Date: "08/06/2025",
+  },
+  {
+    id: "3d-render",
+    Name: "3D Render",
+    Description: "A 3D rendering application using React Three Fiber.",
+    Tags: "React, Three.js, JavaScript, CSS",
+    Date: "08/08/2025",
+  },
 ];
 
 const AllProjectsHomePage = () => {
   return (
     <>
-      {/* Navbar */}
-      <div className="navbar bg-base-200 shadow-sm p-4">
-        <div className="flex-1 text-2xl font-bold">Projects</div>
-        <div className="flex-none">
-          <Link to="/" className="btn btn-primary text-white font-semibold">
-            Back to Home
-          </Link>
-        </div>
-      </div>
-
       {/* Projects Section */}
       <div className="container p-4 mx-auto">
         <h1 className="text-3xl font-bold mb-6">My Projects</h1>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
-          {Projects.map((project) => (
+        <Projects />
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 m-6">
+          {ProjectsInfo.map((project) => (
             <div
               key={project.id}
-              className="break-inside-avoid card bg-base-300 shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow mb-6"
+              className="break-inside-avoid card bg-base-300 shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow mb-4"
             >
               <h2 className="text-xl font-bold">{project.Name}</h2>
               <p>{project.Description}</p>

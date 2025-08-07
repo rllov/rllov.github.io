@@ -21,7 +21,10 @@ import SecondPost from "./BlogPages/SecondPost";
 
 //runescape ge tracker item info page
 import ItemInfo from "./projects/RunescapeGETracker/pages/ItemInformation.jsx";
+import OSRSskilling from "./projects/OSRSskilling/App.jsx";
 
+//3d rendering project
+import ThreeDRender from "./projects/3dRender/App.jsx";
 const ProjectRoutes = {
   "submission-form": SubmissionForm,
   "joke-generator": JokeGeneratorApp,
@@ -29,6 +32,8 @@ const ProjectRoutes = {
   "loot-drop-simulator": LootDropSimulator,
   "runescape-ge-tracker": RunescapeGETracker,
   "coding-concepts": CodingConcepts,
+  "osrs-skilling": OSRSskilling,
+  "3d-render": ThreeDRender,
 };
 
 const blogRoutes = {

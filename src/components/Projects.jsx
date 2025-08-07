@@ -7,14 +7,12 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full max-w-4xl space-y-8 px-4 ">
       <h1 className="text-3xl font-bold mb-4 underline text-success">
-        Projects
+        Featured Projects
       </h1>
-      <p className="text-base-content">
-        Here are some of the projects I've worked on:
-      </p>
+
       <ul className="space-y-10 ">
         <li>
-          <div className="collapse collapse-arrow shadow-lg text-base-content">
+          <div className="collapse collapse-arrow shadow-lg text-base-content bg-base-300">
             <input type="checkbox" className="peer" />
             <div className="collapse-title text-xl font-bold">
               Blog App – Full Stack Project
@@ -72,7 +70,7 @@ const Projects = () => {
         </li>
 
         <li>
-          <div className="collapse collapse-arrow shadow-lg text-base-content">
+          <div className="collapse collapse-arrow shadow-lg text-base-content bg-base-300">
             <input type="checkbox" className="peer" />
             <div className="collapse-title text-xl font-bold">
               Pokémon Info App – Full Stack Project
@@ -127,7 +125,7 @@ const Projects = () => {
         </li>
 
         <li>
-          <div className="collapse collapse-arrow shadow-lg text-base-content">
+          <div className="collapse collapse-arrow shadow-lg text-base-content bg-base-300">
             <input type="checkbox" className="peer" />
             <div className="collapse-title text-xl font-bold">
               Portfolio Website – Frontend Project
@@ -169,7 +167,7 @@ const Projects = () => {
         </li>
 
         <li>
-          <div className="collapse collapse-arrow shadow-lg text-base-content">
+          <div className="collapse collapse-arrow shadow-lg text-base-content bg-base-300">
             <input type="checkbox" className="peer" />
             <div className="collapse-title text-xl font-bold">
               GPT-Calculator
@@ -207,11 +205,6 @@ const Projects = () => {
           </div>
         </li>
       </ul>
-      <div>
-        <button className="btn">
-          <Link to="/projects">View More Projects</Link>
-        </button>
-      </div>
     </section>
   );
 };
